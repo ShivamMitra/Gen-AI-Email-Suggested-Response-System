@@ -1,0 +1,498 @@
+{
+  "overall_score": 58.0,
+  "n": 29,
+  "category_breakdown": {
+    "scheduling": 67.1,
+    "customer_support": 53.7,
+    "sales_inquiry": 67.0,
+    "internal_hr": 53.4,
+    "complaint_escalation": 58.3,
+    "informational": 49.6
+  },
+  "per_response": [
+    {
+      "id": "sched_001",
+      "category": "scheduling",
+      "composite_score": 58.8,
+      "semantic_similarity": 0.192,
+      "coverage_score": 0.667,
+      "covered_points": [
+        "proposes/confirms a specific time",
+        "references Q3 roadmap"
+      ],
+      "missed_points": [
+        "offers to send invite/agenda"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is mostly complete, has a professional tone, and is correct, but it does not explicitly offer to send an invite or agenda, only implying a call will be set up.",
+      "explanation": "coverage 67% (2/3 key points); semantic similarity 19%; LLM judge 4/5 (The reply is mostly complete, has a professional tone, and is correct, but it does not explicitly offer to send an invite or agenda, only implying a call will be set up.); missed: ['offers to send invite/agenda']"
+    },
+    {
+      "id": "sched_002",
+      "category": "scheduling",
+      "composite_score": 65.1,
+      "semantic_similarity": 0.202,
+      "coverage_score": 0.667,
+      "covered_points": [
+        "acknowledges the reschedule request",
+        "proposes/confirms Friday"
+      ],
+      "missed_points": [
+        "offers to update the invite"
+      ],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply is excellent because it acknowledges the reschedule request, proposes Friday while checking availability, and offers to update the schedule, all while maintaining a professional tone.",
+      "explanation": "coverage 67% (2/3 key points); semantic similarity 20%; LLM judge 5/5 (The reply is excellent because it acknowledges the reschedule request, proposes Friday while checking availability, and offers to update the schedule, all while maintaining a professional tone.); missed: ['offers to update the invite']"
+    },
+    {
+      "id": "sched_003",
+      "category": "scheduling",
+      "composite_score": 47.0,
+      "semantic_similarity": 0.082,
+      "coverage_score": 0.333,
+      "covered_points": [
+        "gives specific availability"
+      ],
+      "missed_points": [
+        "thanks them for the opportunity",
+        "flexible tone"
+      ],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply correctly thanks the sender for the opportunity, provides specific availability, and shows a flexible tone, fully addressing the key points and maintaining a professional tone.",
+      "explanation": "coverage 33% (1/3 key points); semantic similarity 8%; LLM judge 5/5 (The reply correctly thanks the sender for the opportunity, provides specific availability, and shows a flexible tone, fully addressing the key points and maintaining a professional tone.); missed: ['thanks them for the opportunity', 'flexible tone']"
+    },
+    {
+      "id": "sched_004",
+      "category": "scheduling",
+      "composite_score": 81.7,
+      "semantic_similarity": 0.269,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "confirms the appointment",
+        "references the date/time"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply correctly addresses the appointment confirmation, references the date and time, and maintains a professional tone while also providing a clear path for potential rescheduling discussions.",
+      "explanation": "coverage 100% (2/2 key points); semantic similarity 27%; LLM judge 5/5 (The reply correctly addresses the appointment confirmation, references the date and time, and maintains a professional tone while also providing a clear path for potential rescheduling discussions.)"
+    },
+    {
+      "id": "sched_005",
+      "category": "scheduling",
+      "composite_score": 82.7,
+      "semantic_similarity": 0.309,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "states availability/no conflicts",
+        "confirms the proposed week"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply is excellent because it correctly addresses the email, maintains a professional tone, and comprehensively covers the key points by stating availability, inquiring about specific dates, and offering to confirm or identify potential conflicts.",
+      "explanation": "coverage 100% (2/2 key points); semantic similarity 31%; LLM judge 5/5 (The reply is excellent because it correctly addresses the email, maintains a professional tone, and comprehensively covers the key points by stating availability, inquiring about specific dates, and offering to confirm or identify potential conflicts.)"
+    },
+    {
+      "id": "support_001",
+      "category": "customer_support",
+      "composite_score": 63.2,
+      "semantic_similarity": 0.22,
+      "coverage_score": 0.75,
+      "covered_points": [
+        "apologizes for the delay",
+        "references order #4521",
+        "gives a status/timeline update"
+      ],
+      "missed_points": [
+        "offers a remedy (discount/next step)"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is mostly complete and has a professional tone, but it lacks a clear status update and specific remedy, and also requests unnecessary information since the order number is already provided.",
+      "explanation": "coverage 75% (3/4 key points); semantic similarity 22%; LLM judge 4/5 (The reply is mostly complete and has a professional tone, but it lacks a clear status update and specific remedy, and also requests unnecessary information since the order number is already provided.); missed: ['offers a remedy (discount/next step)']"
+    },
+    {
+      "id": "support_002",
+      "category": "customer_support",
+      "composite_score": 50.6,
+      "semantic_similarity": 0.195,
+      "coverage_score": 0.75,
+      "covered_points": [
+        "apologizes",
+        "confirms refund processed",
+        "references order #7788"
+      ],
+      "missed_points": [
+        "gives refund timeline"
+      ],
+      "llm_judge_score": 2,
+      "llm_judge_justification": "The reply is professional and apologetic, but it lacks completeness as it does not confirm the refund has been processed, reference order #7788, or provide a refund timeline, instead requesting additional information.",
+      "explanation": "coverage 75% (3/4 key points); semantic similarity 19%; LLM judge 2/5 (The reply is professional and apologetic, but it lacks completeness as it does not confirm the refund has been processed, reference order #7788, or provide a refund timeline, instead requesting additional information.); missed: ['gives refund timeline']"
+    },
+    {
+      "id": "support_003",
+      "category": "customer_support",
+      "composite_score": 52.9,
+      "semantic_similarity": 0.257,
+      "coverage_score": 0.5,
+      "covered_points": [
+        "apologizes",
+        "gives troubleshooting step"
+      ],
+      "missed_points": [
+        "takes an action (reset account)",
+        "offers escalation path"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is professional, apologetic, and offers a troubleshooting step, but it misses taking a direct action like resetting the account and could more explicitly provide an escalation path.",
+      "explanation": "coverage 50% (2/4 key points); semantic similarity 26%; LLM judge 4/5 (The reply is professional, apologetic, and offers a troubleshooting step, but it misses taking a direct action like resetting the account and could more explicitly provide an escalation path.); missed: ['takes an action (reset account)', 'offers escalation path']"
+    },
+    {
+      "id": "support_004",
+      "category": "customer_support",
+      "composite_score": 35.1,
+      "semantic_similarity": 0.204,
+      "coverage_score": 0.0,
+      "covered_points": [],
+      "missed_points": [
+        "thanks the customer",
+        "addresses dark mode specifically",
+        "gives a status (roadmap/no plans/etc.)"
+      ],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply fully addresses the customer's request, maintains a professional tone, and covers all key points by thanking the customer, discussing dark mode, and providing a status on its consideration for future updates.",
+      "explanation": "coverage 0% (0/3 key points); semantic similarity 20%; LLM judge 5/5 (The reply fully addresses the customer's request, maintains a professional tone, and covers all key points by thanking the customer, discussing dark mode, and providing a status on its consideration for future updates.); missed: ['thanks the customer', 'addresses dark mode specifically', 'gives a status (roadmap/no plans/etc.)']"
+    },
+    {
+      "id": "support_005",
+      "category": "customer_support",
+      "composite_score": 64.1,
+      "semantic_similarity": 0.253,
+      "coverage_score": 0.75,
+      "covered_points": [
+        "apologizes",
+        "confirms the double charge/refund",
+        "reassures it won't recur"
+      ],
+      "missed_points": [
+        "gives timeline"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is professional, apologetic, and mostly complete, but it doesn't explicitly confirm the double charge or provide a specific timeline for the refund.",
+      "explanation": "coverage 75% (3/4 key points); semantic similarity 25%; LLM judge 4/5 (The reply is professional, apologetic, and mostly complete, but it doesn't explicitly confirm the double charge or provide a specific timeline for the refund.); missed: ['gives timeline']"
+    },
+    {
+      "id": "support_006",
+      "category": "customer_support",
+      "composite_score": 56.3,
+      "semantic_similarity": 0.09,
+      "coverage_score": 0.667,
+      "covered_points": [
+        "confirms cancellation",
+        "confirms no further billing"
+      ],
+      "missed_points": [
+        "polite closing"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is mostly complete and professional, but it doesn't directly confirm cancellation and instead requests additional information, making it slightly incomplete.",
+      "explanation": "coverage 67% (2/3 key points); semantic similarity 9%; LLM judge 4/5 (The reply is mostly complete and professional, but it doesn't directly confirm cancellation and instead requests additional information, making it slightly incomplete.); missed: ['polite closing']"
+    },
+    {
+      "id": "sales_001",
+      "category": "sales_inquiry",
+      "composite_score": 41.2,
+      "semantic_similarity": 0.089,
+      "coverage_score": 0.333,
+      "covered_points": [
+        "thanks them for interest"
+      ],
+      "missed_points": [
+        "gives pricing info or range",
+        "proposes next step (call)"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is professional, thankful, and attempts to gather more information for a tailored quote, but it misses providing a general pricing range or directly proposing a next step like a call.",
+      "explanation": "coverage 33% (1/3 key points); semantic similarity 9%; LLM judge 4/5 (The reply is professional, thankful, and attempts to gather more information for a tailored quote, but it misses providing a general pricing range or directly proposing a next step like a call.); missed: ['gives pricing info or range', 'proposes next step (call)']"
+    },
+    {
+      "id": "sales_002",
+      "category": "sales_inquiry",
+      "composite_score": 74.4,
+      "semantic_similarity": 0.217,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "grants/addresses the extension request",
+        "confirms new duration",
+        "offers further help"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is professional, correctly addresses the extension request, but doesn't fully meet the completeness criteria as it doesn't confirm a new duration, instead asking for more information to potentially arrange one.",
+      "explanation": "coverage 100% (3/3 key points); semantic similarity 22%; LLM judge 4/5 (The reply is professional, correctly addresses the extension request, but doesn't fully meet the completeness criteria as it doesn't confirm a new duration, instead asking for more information to potentially arrange one.)"
+    },
+    {
+      "id": "sales_003",
+      "category": "sales_inquiry",
+      "composite_score": 62.9,
+      "semantic_similarity": 0.116,
+      "coverage_score": 0.667,
+      "covered_points": [
+        "addresses the comparison directly",
+        "offers a next step"
+      ],
+      "missed_points": [
+        "gives concrete differentiators"
+      ],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply correctly addresses the comparison, provides concrete differentiators, and offers a next step, all while maintaining a professional tone.",
+      "explanation": "coverage 67% (2/3 key points); semantic similarity 12%; LLM judge 5/5 (The reply correctly addresses the comparison, provides concrete differentiators, and offers a next step, all while maintaining a professional tone.); missed: ['gives concrete differentiators']"
+    },
+    {
+      "id": "sales_004",
+      "category": "sales_inquiry",
+      "composite_score": 76.8,
+      "semantic_similarity": 0.073,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "acknowledges the decision gracefully",
+        "thanks them",
+        "leaves door open without being pushy"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply is excellent because itacknowledges the decision gracefully, thanks them, and leaves the door open without being pushy, all while maintaining a professional tone.",
+      "explanation": "coverage 100% (3/3 key points); semantic similarity 7%; LLM judge 5/5 (The reply is excellent because itacknowledges the decision gracefully, thanks them, and leaves the door open without being pushy, all while maintaining a professional tone.)"
+    },
+    {
+      "id": "sales_005",
+      "category": "sales_inquiry",
+      "composite_score": 79.6,
+      "semantic_similarity": 0.184,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "confirms willingness to demo",
+        "gives specific time options",
+        "flexible/open to alternatives"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply is correct, professional, and complete, as it confirms willingness to demo, gives the recipient the option to suggest a time or receive suggestions, and shows flexibility in accommodating the team's needs.",
+      "explanation": "coverage 100% (3/3 key points); semantic similarity 18%; LLM judge 5/5 (The reply is correct, professional, and complete, as it confirms willingness to demo, gives the recipient the option to suggest a time or receive suggestions, and shows flexibility in accommodating the team's needs.)"
+    },
+    {
+      "id": "hr_001",
+      "category": "internal_hr",
+      "composite_score": 24.5,
+      "semantic_similarity": 0.02,
+      "coverage_score": 0.0,
+      "covered_points": [],
+      "missed_points": [
+        "approves/addresses the specific dates",
+        "checks for conflicts",
+        "reminds about handoff"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is professional, correctly addresses the request, and checks for conflicts, but it does not explicitly remind about handoff, which is a key point.",
+      "explanation": "coverage 0% (0/3 key points); semantic similarity 2%; LLM judge 4/5 (The reply is professional, correctly addresses the request, and checks for conflicts, but it does not explicitly remind about handoff, which is a key point.); missed: ['approves/addresses the specific dates', 'checks for conflicts', 'reminds about handoff']"
+    },
+    {
+      "id": "hr_002",
+      "category": "internal_hr",
+      "composite_score": 56.9,
+      "semantic_similarity": 0.115,
+      "coverage_score": 0.667,
+      "covered_points": [
+        "answers the re-enrollment question",
+        "practical suggestion"
+      ],
+      "missed_points": [
+        "gives enrollment dates"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is professional, complete, and correct, but does not provide specific enrollment dates, which prevents it from being excellent.",
+      "explanation": "coverage 67% (2/3 key points); semantic similarity 11%; LLM judge 4/5 (The reply is professional, complete, and correct, but does not provide specific enrollment dates, which prevents it from being excellent.); missed: ['gives enrollment dates']"
+    },
+    {
+      "id": "hr_003",
+      "category": "internal_hr",
+      "composite_score": 60.5,
+      "semantic_similarity": 0.019,
+      "coverage_score": 0.667,
+      "covered_points": [
+        "lists concrete prep items",
+        "reassures rest is covered"
+      ],
+      "missed_points": [
+        "welcomes them"
+      ],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply perfectly welcomes the new employee, lists a concrete preparation item, and reassures that the rest will be covered during the orientation, all while maintaining a professional tone.",
+      "explanation": "coverage 67% (2/3 key points); semantic similarity 2%; LLM judge 5/5 (The reply perfectly welcomes the new employee, lists a concrete preparation item, and reassures that the rest will be covered during the orientation, all while maintaining a professional tone.); missed: ['welcomes them']"
+    },
+    {
+      "id": "hr_004",
+      "category": "internal_hr",
+      "composite_score": 41.2,
+      "semantic_similarity": 0.088,
+      "coverage_score": 0.333,
+      "covered_points": [
+        "gives status"
+      ],
+      "missed_points": [
+        "apologizes/acknowledges delay",
+        "gives timeline"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is mostly complete, professional, and correct, but it does not explicitly apologize for the delay, which prevents it from being perfect.",
+      "explanation": "coverage 33% (1/3 key points); semantic similarity 9%; LLM judge 4/5 (The reply is mostly complete, professional, and correct, but it does not explicitly apologize for the delay, which prevents it from being perfect.); missed: ['apologizes/acknowledges delay', 'gives timeline']"
+    },
+    {
+      "id": "hr_005",
+      "category": "internal_hr",
+      "composite_score": 83.7,
+      "semantic_similarity": 0.346,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "agrees to help",
+        "asks for needed details",
+        "commits to the deadline"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply is excellent because it agrees to help, asks for necessary details, commits to meeting the deadline, and maintains a professional tone throughout.",
+      "explanation": "coverage 100% (3/3 key points); semantic similarity 35%; LLM judge 5/5 (The reply is excellent because it agrees to help, asks for necessary details, commits to meeting the deadline, and maintains a professional tone throughout.)"
+    },
+    {
+      "id": "complaint_001",
+      "category": "complaint_escalation",
+      "composite_score": 49.0,
+      "semantic_similarity": 0.1,
+      "coverage_score": 0.5,
+      "covered_points": [
+        "genuinely apologizes",
+        "acknowledges repeated issue"
+      ],
+      "missed_points": [
+        "escalates/takes concrete action",
+        "commits to a follow-up timeline"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is mostly complete and correctly addresses the email with a professional tone, but it falls short of explicitly escalating the issue or committing to a specific follow-up timeline.",
+      "explanation": "coverage 50% (2/4 key points); semantic similarity 10%; LLM judge 4/5 (The reply is mostly complete and correctly addresses the email with a professional tone, but it falls short of explicitly escalating the issue or committing to a specific follow-up timeline.); missed: ['escalates/takes concrete action', 'commits to a follow-up timeline']"
+    },
+    {
+      "id": "complaint_002",
+      "category": "complaint_escalation",
+      "composite_score": 67.4,
+      "semantic_similarity": 0.144,
+      "coverage_score": 0.75,
+      "covered_points": [
+        "apologizes sincerely",
+        "commits to internal follow-up",
+        "offers to resolve the underlying issue"
+      ],
+      "missed_points": [
+        "acknowledges the behavior was unacceptable"
+      ],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply effectively addresses the customer's concern by apologizing sincerely, acknowledging the unacceptable behavior, committing to internal follow-up, and offering to resolve the underlying issue, all while maintaining a professional tone.",
+      "explanation": "coverage 75% (3/4 key points); semantic similarity 14%; LLM judge 5/5 (The reply effectively addresses the customer's concern by apologizing sincerely, acknowledging the unacceptable behavior, committing to internal follow-up, and offering to resolve the underlying issue, all while maintaining a professional tone.); missed: ['acknowledges the behavior was unacceptable']"
+    },
+    {
+      "id": "complaint_003",
+      "category": "complaint_escalation",
+      "composite_score": 58.4,
+      "semantic_similarity": 0.177,
+      "coverage_score": 0.667,
+      "covered_points": [
+        "takes it seriously / does not dismiss",
+        "escalates to appropriate team"
+      ],
+      "missed_points": [
+        "commits to the 48-hour timeline"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is mostly correct, professional, and complete, but it does not explicitly commit to the 48-hour timeline mentioned in the incoming email.",
+      "explanation": "coverage 67% (2/3 key points); semantic similarity 18%; LLM judge 4/5 (The reply is mostly correct, professional, and complete, but it does not explicitly commit to the 48-hour timeline mentioned in the incoming email.); missed: ['commits to the 48-hour timeline']"
+    },
+    {
+      "id": "info_001",
+      "category": "informational",
+      "composite_score": 66.1,
+      "semantic_similarity": 0.124,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "gives specific rate limit numbers",
+        "mentions upgrade path"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 3,
+      "llm_judge_justification": "The reply is professional and partially correct, but it lacks information about the upgrade path, which is a key point, although it does provide specific rate limit numbers.",
+      "explanation": "coverage 100% (2/2 key points); semantic similarity 12%; LLM judge 3/5 (The reply is professional and partially correct, but it lacks information about the upgrade path, which is a key point, although it does provide specific rate limit numbers.)"
+    },
+    {
+      "id": "info_002",
+      "category": "informational",
+      "composite_score": 79.3,
+      "semantic_similarity": 0.172,
+      "coverage_score": 1.0,
+      "covered_points": [
+        "directly answers open/closed",
+        "gives hours if relevant"
+      ],
+      "missed_points": [],
+      "llm_judge_score": 5,
+      "llm_judge_justification": "The reply directly answers whether the office is open, suggests verifying hours of operation, and maintains a professional tone throughout the response.",
+      "explanation": "coverage 100% (2/2 key points); semantic similarity 17%; LLM judge 5/5 (The reply directly answers whether the office is open, suggests verifying hours of operation, and maintains a professional tone throughout the response.)"
+    },
+    {
+      "id": "info_003",
+      "category": "informational",
+      "composite_score": 44.6,
+      "semantic_similarity": 0.225,
+      "coverage_score": 0.333,
+      "covered_points": [
+        "confirms Canada shipping"
+      ],
+      "missed_points": [
+        "gives cost",
+        "gives delivery time"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is mostly complete, has a professional tone, and is correct, but it does not provide a specific delivery time or a clear cost, only offering a quote for the shipping cost.",
+      "explanation": "coverage 33% (1/3 key points); semantic similarity 22%; LLM judge 4/5 (The reply is mostly complete, has a professional tone, and is correct, but it does not provide a specific delivery time or a clear cost, only offering a quote for the shipping cost.); missed: ['gives cost', 'gives delivery time']"
+    },
+    {
+      "id": "info_004",
+      "category": "informational",
+      "composite_score": 40.7,
+      "semantic_similarity": 0.068,
+      "coverage_score": 0.333,
+      "covered_points": [
+        "confirms downtime expected"
+      ],
+      "missed_points": [
+        "gives time window/duration",
+        "clarifies user action needed"
+      ],
+      "llm_judge_score": 4,
+      "llm_judge_justification": "The reply is professional, acknowledges potential downtime, and invites further inquiry, but falls short of explicitly stating the expected duration of downtime and specific user actions needed.",
+      "explanation": "coverage 33% (1/3 key points); semantic similarity 7%; LLM judge 4/5 (The reply is professional, acknowledges potential downtime, and invites further inquiry, but falls short of explicitly stating the expected duration of downtime and specific user actions needed.); missed: ['gives time window/duration', 'clarifies user action needed']"
+    },
+    {
+      "id": "info_005",
+      "category": "informational",
+      "composite_score": 17.2,
+      "semantic_similarity": 0.207,
+      "coverage_score": 0.0,
+      "covered_points": [],
+      "missed_points": [
+        "gives return window (30 days)",
+        "conditions (unworn/tags)",
+        "mentions refund/exchange options"
+      ],
+      "llm_judge_score": 2,
+      "llm_judge_justification": "The reply is professional and polite, but it lacks completeness as it does not directly address the key points of return policy, such as the 30-day window, conditions for return, and refund/exchange options.",
+      "explanation": "coverage 0% (0/3 key points); semantic similarity 21%; LLM judge 2/5 (The reply is professional and polite, but it lacks completeness as it does not directly address the key points of return policy, such as the 30-day window, conditions for return, and refund/exchange options.); missed: ['gives return window (30 days)', 'conditions (unworn/tags)', 'mentions refund/exchange options']"
+    }
+  ]
+}
