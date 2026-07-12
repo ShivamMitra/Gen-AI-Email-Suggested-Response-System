@@ -1,8 +1,8 @@
 # Gen-AI Email Suggested-Response System
 
 An end-to-end system that (1) drafts a suggested reply to an incoming email
-using an LLM grounded in a dataset of past emails, and (2) — the main focus
-of this project — **measures how good each suggestion actually is**, with
+using an LLM grounded in a dataset of past emails, and (2) the main focus
+of this project **measures how good each suggestion actually is**, with
 per-response and overall scores.
 
 ```
