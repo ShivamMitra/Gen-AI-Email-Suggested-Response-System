@@ -21,16 +21,16 @@ email_ai_system/
 └── report.json                # produced by run_pipeline.py
 ```
 
-## 1. The dataset — where it came from and why it's representative
+## 1. The dataset - where it came from and why it's representative
 
 `data/generate_dataset.py` produces `dataset.jsonl`: **29 hand-authored,
 synthetic (incoming_email, reply) pairs** across 6 realistic inbox
-categories — `scheduling`, `customer_support`, `sales_inquiry`,
+categories : `scheduling`, `customer_support`, `sales_inquiry`,
 `internal_hr`, `complaint_escalation`, `informational`.
 
 **Why hand-authored/synthetic rather than a scraped public corpus (e.g.
 Enron):**
-- Real inboxes contain PII and confidential business info — not something
+- Real inboxes contain PII and confidential business info not something
   you can put in a public repo responsibly.
 - Public email corpora (Enron, etc.) are messy, thread-heavy, and don't
   come with a *correct-reply checklist* — and that checklist is the single
