@@ -62,7 +62,7 @@ with the same schema) and everything downstream keeps working.
 }
 ```
 `key_points` is the critical annotation: the minimal checklist a *correct*
-reply must satisfy. It matters more than the literal reply text — see §3.
+reply must satisfy. It matters more than the literal reply text see §3.
 
 ## 2. The generator (Gen-AI, not classical ML)
 
