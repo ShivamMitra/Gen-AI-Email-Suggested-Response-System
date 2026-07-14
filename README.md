@@ -43,10 +43,10 @@ Enron):**
 
 **Why it's still representative:** each example is modeled directly on a
 realistic real-world scenario (order delays, double billing, PTO requests,
-pricing inquiries, angry customers, etc.) — the kind of things any
+pricing inquiries, angry customers, etc.) the kind of things any
 support/sales/ops inbox handles daily. It is intentionally small (29
 examples) because the point of this exercise is the *evaluation system*,
-not scale; the dataset and pipeline are built to scale — add more rows to
+not scale; the dataset and pipeline are built to scale add more rows to
 `generate_dataset.py` (or point `load_dataset()` at a different `.jsonl`
 with the same schema) and everything downstream keeps working.
 
