@@ -33,7 +33,7 @@ Enron):**
 - Real inboxes contain PII and confidential business info not something
   you can put in a public repo responsibly.
 - Public email corpora (Enron, etc.) are messy, thread-heavy, and don't
-  come with a *correct-reply checklist* — and that checklist is the single
+  come with a *correct-reply checklist* and that checklist is the single
   most important thing this project needs (see §3). Hand-authoring lets us
   guarantee it exists and is accurate for every example.
 - Hand-authoring lets us deliberately balance categories and behaviors
