@@ -21,7 +21,7 @@ email_ai_system/
 └── report.json                # produced by run_pipeline.py
 ```
 
-## 1. The Dataset - Where it came from and why it's Representative
+## 1. The Dataset - Where it came from and Why it's Representative
 
 `data/generate_dataset.py` produces `dataset.jsonl`: **29 hand-authored,
 synthetic (incoming_email, reply) pairs** across 6 realistic inbox
@@ -103,7 +103,7 @@ closest retrieved reply). This exists purely so the **whole pipeline is
 runnable and gradeable without a key or network access** it is *not*
 meant to represent generation quality; the LLM path is the intended one.
 
-## 3. The accuracy/evaluation system — the core of this project
+## 3. The Accuracy/Evaluation System - the Core of this Project
 
 `eval/evaluate.py`. Full reasoning is in the module docstring; summary
 below.
