@@ -64,7 +64,7 @@ with the same schema) and everything downstream keeps working.
 `key_points` is the critical annotation: the minimal checklist a *correct*
 reply must satisfy. It matters more than the literal reply text see §3.
 
-## 2. The generator (Gen-AI, not classical ML)
+## 2. The Generator (Gen-AI, not classical ML)
 
 `src/generator.py`:
 1. **Retrieves** the *k* most similar past emails from the dataset using
@@ -74,7 +74,7 @@ reply must satisfy. It matters more than the literal reply text see §3.
 3. **Calls Groq** (via the `groq` SDK, OpenAI-compatible chat completions)
    to generate the suggested reply, grounded in that retrieved context.
 
-   **Model used: `llama-3.3-70b-versatile`** (default) — strong quality,
+   **Model used: `llama-3.3-70b-versatile`** (default) strong quality,
    fast inference, and a generous free tier, which is why the project
    moved to Groq after hitting Google AI Studio's free-tier quota limits
    during testing. For a lighter/faster option with more headroom, swap in
