@@ -21,7 +21,7 @@ email_ai_system/
 └── report.json                # produced by run_pipeline.py
 ```
 
-## 1. The dataset - where it came from and why it's representative
+## 1. The Dataset - Where it came from and why it's Representative
 
 `data/generate_dataset.py` produces `dataset.jsonl`: **29 hand-authored,
 synthetic (incoming_email, reply) pairs** across 6 realistic inbox
