@@ -83,16 +83,16 @@ reply must satisfy. It matters more than the literal reply text see §3.
    by editing the default in `src/generator.py`.
 
 ### Why retrieval + few-shot prompting instead of fine-tuning
-- The dataset is intentionally small — fine-tuning on 29 examples would
+- The dataset is intentionally small fine-tuning on 29 examples would
   overfit and add real cost/complexity for no benefit. A frontier LLM
   already knows how to write a good email; what it needs is *grounding* in
   this specific inbox's tone, facts, and past resolutions.
 - Retrieval keeps the system **inspectable**: every generated reply can be
-  traced back to the exact past examples that informed it — which directly
+  traced back to the exact past examples that informed it which directly
   feeds the evaluation system (you can check whether the model actually
   used what it was given).
 - **Trade-off:** at real scale (thousands of emails, a mature product) a
-  hybrid approach makes more sense — retrieval/prompting to start, with
+  hybrid approach makes more sense retrieval/prompting to start, with
   periodic light fine-tuning or preference-tuning on accepted vs.
   human-edited suggestions once there's enough signal to do it safely.
 
@@ -100,7 +100,7 @@ reply must satisfy. It matters more than the literal reply text see §3.
 If `GROQ_API_KEY` isn't set, `generator.py` automatically falls back
 to a deterministic, no-network "offline" generator (adapts the single
 closest retrieved reply). This exists purely so the **whole pipeline is
-runnable and gradeable without a key or network access** — it is *not*
+runnable and gradeable without a key or network access** it is *not*
 meant to represent generation quality; the LLM path is the intended one.
 
 ## 3. The accuracy/evaluation system — the core of this project
