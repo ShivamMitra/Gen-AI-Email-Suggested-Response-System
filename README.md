@@ -108,8 +108,8 @@ meant to represent generation quality; the LLM path is the intended one.
 `eval/evaluate.py`. Full reasoning is in the module docstring; summary
 below.
 
-### What does "accurate" mean here?
-Exact string match against the historical reply is the wrong bar — two
+### What does "Accurate" mean here?
+Exact string match against the historical reply is the wrong bar two
 replies can use totally different words and both be great. Instead,
 accuracy is decomposed into three checkable dimensions:
 
