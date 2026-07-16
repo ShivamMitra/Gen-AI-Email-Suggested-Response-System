@@ -126,7 +126,7 @@ so the score stays on a consistent 0–100 scale.
 **Why this combination and not just one number:** coverage catches "did it
 do the job," similarity catches "does it sound like how we actually talk
 to people," and the LLM judge catches things the other two structurally
-can't — hallucinated facts, wrong tone, a technically-keyword-matching but
+can't hallucinated facts, wrong tone, a technically-keyword-matching but
 nonsensical reply. Any one of these alone is gameable; together they're
 much harder to fool (e.g. a reply that stuffs in every key-point keyword
 but reads incoherently would still lose on the LLM-judge dimension).
@@ -144,7 +144,7 @@ Result on this dataset: **89% pairwise ranking agreement (8/9 pairs)** —
 the one disagreement is disclosed in the output, not hidden: a "bad" reply
 scored higher than a "mediocre" one because it happened to hit a keyword
 pattern. This is an honest illustration of the known trade-off of
-keyword-based coverage matching (see limitations below) — at production
+keyword-based coverage matching (see limitations below) at production
 scale you'd validate against a larger sample of real human reviewer labels
 and iterate on the pattern lists / consider swapping in embedding
 similarity or a dedicated NLI-based checker for coverage.
