@@ -140,7 +140,7 @@ the composite score ranks them the same way the human rating does
 
 Run it: `python eval/evaluate.py`
 
-Result on this dataset: **89% pairwise ranking agreement (8/9 pairs)** —
+Result on this dataset: **89% pairwise ranking agreement (8/9 pairs)** -
 the one disagreement is disclosed in the output, not hidden: a "bad" reply
 scored higher than a "mediocre" one because it happened to hit a keyword
 pattern. This is an honest illustration of the known trade-off of
@@ -156,7 +156,7 @@ similarity or a dedicated NLI-based checker for coverage.
 - **Overall system score**: mean composite score across all responses.
 - **Category breakdown**: mean score per email category (some intents,
   e.g. `complaint_escalation`, are inherently harder than others, e.g.
-  `informational` — reporting this separately avoids a single number
+  `informational` - reporting this separately avoids a single number
   hiding weak spots).
 
 ### A real end-to-end run (Groq, `llama-3.3-70b-versatile`)
