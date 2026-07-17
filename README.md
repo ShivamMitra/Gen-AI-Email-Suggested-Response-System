@@ -119,9 +119,9 @@ accuracy is decomposed into three checkable dimensions:
 | 2 | **Semantic similarity** (25%) | Is it on-topic and in a similar spirit to how we've handled this before? | TF-IDF cosine similarity vs. the historical reply |
 | 3 | **LLM-as-judge** (30%, optional) | Would a human reviewer call this a good, safe, sendable reply? | Groq (`llama-3.3-70b-versatile`) scores 1-5 on correctness/tone/completeness with a justification |
 
-These combine into a **composite score, 0–100, per response**. If no API
+These combine into a **composite score, 0-100, per response**. If no API
 key is available, weight 3 is redistributed proportionally across 1 and 2
-so the score stays on a consistent 0–100 scale.
+so the score stays on a consistent 0-100 scale.
 
 **Why this combination and not just one number:** coverage catches "did it
 do the job," similarity catches "does it sound like how we actually talk
@@ -134,7 +134,7 @@ but reads incoherently would still lose on the LLM-judge dimension).
 ### How we validate the metric reflects real quality (not just a number)
 `validate_against_human_ratings()` in `evaluate.py` is a small, honest
 sanity check: for 3 incoming emails we hand-write a **GOOD / MEDIOCRE /
-BAD** reply each, with our own 1–5 human quality rating, then check whether
+BAD** reply each, with our own 1-5 human quality rating, then check whether
 the composite score ranks them the same way the human rating does
 (pairwise ranking agreement).
 
